@@ -2,57 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Pet Shop Design System - Cores pastel carinhosas e acolhedoras
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cores base do pet shop */
+    --background: 330 40% 98%;
+    --foreground: 340 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 340 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 340 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Rosa suave como cor primária - carinhoso e acolhedor */
+    --primary: 330 65% 75%;
+    --primary-foreground: 340 25% 15%;
+    --primary-soft: 330 45% 88%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Azul bebê como secundário - confiança e profissionalismo */
+    --secondary: 200 45% 85%;
+    --secondary-foreground: 200 25% 25%;
+    --secondary-soft: 200 35% 92%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Verde menta para destaque - saúde e bem-estar */
+    --accent: 160 40% 80%;
+    --accent-foreground: 160 25% 25%;
+    --accent-soft: 160 30% 90%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Amarelo suave para alegria */
+    --sunshine: 45 65% 85%;
+    --sunshine-foreground: 45 25% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 330 25% 95%;
+    --muted-foreground: 340 15% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 65% 70%;
+    --destructive-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    --border: 330 25% 90%;
+    --input: 330 25% 95%;
+    --ring: 330 65% 75%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradientes especiais para pet shop */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--secondary-soft)));
+    --gradient-services: linear-gradient(135deg, hsl(var(--accent-soft)), hsl(var(--sunshine) / 0.5));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Sombras suaves */
+    --shadow-card: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-button: 0 2px 10px hsl(var(--primary) / 0.2);
+    --shadow-floating: 0 8px 30px hsl(var(--primary) / 0.15);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animações */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
